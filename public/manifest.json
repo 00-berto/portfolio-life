@@ -1,0 +1,15 @@
+{
+  "short_name": "life™",
+  "name": "life™",
+  "icons": [
+    {
+      "src": "/ios_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "white",
+  "background_color": "white"
+}
