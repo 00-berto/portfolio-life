@@ -8,9 +8,11 @@ import { Link } from "react-router";
 
 export default function App() {
   return (
-      <div className="flex justify-center items-center h-dvh w-screen relative overflow-hidden">
-          <Earth />
-          <div className="absolute bottom-16 left-0 right-0 flex items-center justify-center flex-col sm:gap-0 gap-3">
+      <div className="flex flex-col gap-3 py-16 justify-center items-center h-dvh w-screen relative overflow-hidden">
+          <div className="-mt-16 size-full">
+            <Earth />
+          </div>
+          <div className="flex items-center justify-center flex-col sm:gap-0 gap-3">
               <div className="text-3xl font-black font-mono tracking-tighter">
                   berto
               </div>
