@@ -17,12 +17,12 @@ export default function BlogPost() {
             try {
                 const response = await fetch(`/blog/${postId}.md`);
                 if (!response.ok) {
-                    setPostContent("# no post found.\ncouldn't find this post.");
+                    setPostContent(`# no post found.\ncouldn't find post "${postId}".`);
                     return;
                 }
                 const contentType = response.headers.get("Content-Type");
                 if (!contentType?.includes("text/markdown")) {
-                    setPostContent("# no post found.\ncouldn't find this post.");
+                    setPostContent(`# no post found.\ncouldn't find post "${postId}".`);
                     return;
                 }
                 const content = await response.text();
