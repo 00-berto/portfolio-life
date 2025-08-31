@@ -10,7 +10,7 @@ export default function Blog() {
                         <ChevronLeftIcon className={"size-6 stroke-3"}/>
                         go back
                     </Link>
-                    <div className={"text-2xl font-black"}>blog</div>
+                    <div className={"text-2xl font-black"}>blog!</div>
                     <Link to={"/blog/philosophy"} className={"text-base"}>philosophy</Link>
                 </>
             </div>
