@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ChevronLeftIcon } from "lucide-react";
 import Markdown from "react-markdown";
 import * as React from "react";
+import remarkGfm from "remark-gfm";
 
 export default function BlogPost() {
     const { postId } = useParams();
@@ -46,13 +47,15 @@ export default function BlogPost() {
     };
 
     return (
-        <div className={"min-h-screen min-w-screen flex"}>
+        <div className={"min-h-screen min-w-screen flex bg-white"}>
             <div className={"font-mono tracking-tighter p-5 flex flex-col gap-3"}>
-                <Link to={"/blog"} className="text-lg font-black text-[#33A1E0] flex flex-row gap-1 items-center hover:text-[#2A7DAC] transition-all ease-out duration-75">
+                <Link to={"/blog"} className="text-lg font-black text-[#33A1E0] flex flex-row gap-1 items-center hover:underline transition-all ease-out duration-75">
                     <ChevronLeftIcon className={"size-6 stroke-3"}/>
-                    go back
+                    torna indietro
                 </Link>
-                <Markdown components={components}>{postContent}</Markdown>
+                <div className="prose">
+                    <Markdown remarkPlugins={[[remarkGfm]]} components={components}>{postContent}</Markdown>
+                </div>
             </div>
         </div>
     );

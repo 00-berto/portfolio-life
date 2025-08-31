@@ -4,11 +4,11 @@ import GithubIcon from "./components/icons/GithubIcon.tsx";
 import InstagramIcon from "./components/icons/InstagramIcon.tsx";
 import SpotifyIcon from "./components/icons/SpotifyIcon.tsx";
 import { Link } from "react-router";
-// import { CameraIcon, ScrollTextIcon } from "lucide-react";
+// import { ScrollTextIcon } from "lucide-react";
 
 export default function App() {
   return (
-      <div className="flex flex-col gap-3 py-16 justify-center items-center h-dvh w-screen relative overflow-hidden">
+      <div className="flex flex-col gap-3 py-16 justify-center items-center h-dvh w-screen relative overflow-hidden bg-white">
           <div className="size-full">
             <Earth />
           </div>
@@ -30,10 +30,11 @@ export default function App() {
           </div>
 
           {/*<div className="absolute top-3 right-3 left-3 flex flex-row justify-between">*/}
-          {/*    <Link to={"/blog"} className={"flex flex-row gap-2 text-lg font-mono tracking-tighter hover:underline"}>*/}
-          {/*        <CameraIcon className={"size-7 transition-all ease-out duration-75"}/>*/}
-          {/*        pics*/}
-          {/*    </Link>*/}
+          {/*    /!*<Link to={"/blog"} className={"flex flex-row gap-2 text-lg font-mono tracking-tighter hover:underline"}>*!/*/}
+          {/*    /!*    <CameraIcon className={"size-7 transition-all ease-out duration-75"}/>*!/*/}
+          {/*    /!*    pics*!/*/}
+          {/*    /!*</Link>*!/*/}
+          {/*    <div/> /!* dont mind this i just didnt want to change justify-between to justify-end *!/*/}
 
           {/*    <Link to={"/blog"} className={"flex flex-row gap-2 text-lg font-mono tracking-tighter hover:underline"}>*/}
           {/*        blog*/}
