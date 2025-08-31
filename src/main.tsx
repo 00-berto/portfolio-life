@@ -5,6 +5,7 @@ import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from "react-router";
 import BlogPost from "./blog/post.tsx";
 import Blog from "./blog";
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')!).render(
               <Route path={"/blog"} element={<Blog/>}/>
           </Routes>
       </BrowserRouter>
+      <Analytics/>
   </StrictMode>,
 )
