@@ -1,3 +1,16 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://berto.life/blog",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "blog.berto.life"
+        }
+      ]
+    }
+  ]
 }
