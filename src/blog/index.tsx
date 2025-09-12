@@ -4,20 +4,8 @@ import { ChevronLeftIcon } from "lucide-react";
 export default function Blog() {
     const pages: { id: string, name: string }[] = [
         {
-            id: "ghali",
-            name: "ghali"
-        },
-        {
-            id: "yugi",
-            name: "kid yugi"
-        },
-        {
-            id: "omegle",
-            name: "omegle"
-        },
-        {
-            id: "players-club",
-            name: "players club"
+            id: "philosophy",
+            name: "philosophy"
         },
         {
             id: "31-08-25",
